@@ -7,3 +7,17 @@ def index(request):
         'title':'Home'
     }
     return render(request, 'index.html',context)
+
+def about(request):
+    context = {
+        'current_date':datetime.now(),
+        'title':'About'
+    }
+    return render(request, 'about.html',context)
+
+def news(request):
+    context = {
+        'current_date':datetime.now(),
+        'title':'News'
+    }
+    return render(request, 'news.html',context)
